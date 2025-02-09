@@ -7,6 +7,6 @@ app.set("port", process.env.PORT || 8080);
 app.use(require("./routes/index"));
 
 //Iniciando el servidor
-app.listen(app.get("port"), function () {
+app.listen(app.get("port"), () => {
     console.log("hola desde el puerto " +app.get("port"));
 });
