@@ -41,6 +41,7 @@ router.get("/rutaGet4", (req, res) => {
 
 router.post("/holaPOST", (req, res) => {
     console.log("Enviada una petición post");
+    res.send("hola soy la 1ª ruta POST");
 });
 
 module.exports = router;
