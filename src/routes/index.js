@@ -44,4 +44,19 @@ router.post("/holaPOST", (req, res) => {
     res.send("hola soy la 1ª ruta POST");
 });
 
+router.post("/rutaPOSTconBody1", (req, res) => {
+    req.body = "Recopilamos la información de los formularios";
+
+    console.log("Enviamos petición POST");
+    console.log(req.body);
+    res.json({
+        Title: "Prueba para formulario con POST",
+    });
+});
+
+router.post("/rutaPOST2", (req, res) => {
+    console.log("Segundo intento de ruta POST.");
+    res.send("Este es un mensaje para comprobación de la ruta POST");
+});
+
 module.exports = router;
