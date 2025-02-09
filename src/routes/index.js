@@ -12,7 +12,7 @@ router.get("/rutaGetConRouter", (req, res) => {
     res.send("hola soy la 2ª ruta GET");
 });
 
-router.get("rutaGetConJSON", (req, res) => {
+router.get("/rutaGetConJSON", (req, res) => {
     console.log("hola en la consola de node, desde la 3ª ruta GET en el servidor");
     res.json({
         Title: "Hola mundo con express probando cosas para subir a github",
