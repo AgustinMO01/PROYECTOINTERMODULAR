@@ -59,4 +59,18 @@ router.post("/rutaPOST2", (req, res) => {
     res.send("Este es un mensaje para comprobación de la ruta POST");
 });
 
+router.post("/rutaPOST3", (req, res) => {
+    console.log("Escribiendo la 3ª ruta POST");
+    res.send("Hola desde mi primer proyecto");
+});
+
+router.post("/rutaPOST4", (req, res) => {
+    console.log("Alguién está intentando leer esta ruta POST");
+    res.send("Este mensaje se muestra en postman");
+});
+
+router.post("/rutaPOST5", (req, res) => {
+    console.log("La complejidad de la ruta POST");
+    res.send("No se puede ver el mensaje de la ruta post directamente desde google.");
+});
 module.exports = router;
