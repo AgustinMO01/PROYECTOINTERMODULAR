@@ -13,3 +13,6 @@ app.get("/rutaGEt", function (req, res) {
 function leerPuerto() {
     console.log("hola desde el puerto " + app.get("port"));
 }
+
+//Routes
+app.use(require("./routes/index"));
