@@ -39,5 +39,8 @@ router.get("/rutaGet4", (req, res) => {
     res.send("Esta es una de esas rutas y su mensaje es: ADIOS");
 });
 
+router.post("/holaPOST", (req, res) => {
+    console.log("Enviada una petición post");
+});
 
 module.exports = router;
