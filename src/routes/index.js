@@ -19,5 +19,25 @@ router.get("/rutaGetConJSON", (req, res) => {
     });
 });
 
+router.get("/rutaGet1", (req, res) => {
+    console.log("hola en la consola de node, desde una la 2ª ruta GET en el servidor");
+    res.send("Esta es la práctica para el prototipo");
+});
+
+router.get("/rutaGet2", (req, res) => {
+    console.log("hola en la consola de node, desde una la 3ª ruta GET en el servidor");
+    res.send("Tenemos que hacer rutas de tipo get");
+});
+
+router.get("/rutaGet3", (req, res) => {
+    console.log("hola en la consola de node, desde una la 4ª ruta GET en el servidor");
+    res.send("Esta es una de esas rutas y su mensaje es: HOLA");
+});
+
+router.get("/rutaGet4", (req, res) => {
+    console.log("hola en la consola de node, desde una la 4ª ruta GET en el servidor");
+    res.send("Esta es una de esas rutas y su mensaje es: ADIOS");
+});
+
 
 module.exports = router;
