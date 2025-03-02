@@ -7,6 +7,18 @@
        <title>Document</title> 
     </head>
     <body>
-        Hola mundo
+        <p>Formulario para enviarlo a ruta GET</p>
+        <form action="http://localhost:8080/rutaGET" method="GET">
+            First name: <input type="text" name="nombre" /><br />
+            Last name: <input type="text" name="apellido" /><br />
+            <button type="submit">Send to backend</button>
+        </form>
+    <br />
+    <p>Formulario para envio a ruta POST</p>
+    <form action="http://localhost:8080/rutaPOST" method="POST">
+        First name: <input type="text" name="nombre" /><br />
+        Last name: <input type="text" name="apellido" /><br />
+        <button type="submit">Send to backend</button>
+    </form>
     </body>
 </html>
