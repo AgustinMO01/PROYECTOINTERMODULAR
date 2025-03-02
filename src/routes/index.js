@@ -41,7 +41,12 @@ router.get("/rutaGet4", (req, res) => {
 
 router.post("/holaPOST", (req, res) => {
     console.log("Enviada una petición post");
-    res.send("hola soy la 1ª ruta POST");
+    console.log(req.body);
+    // res.json({
+    //    id: "001"
+    //    nombre: req.body.nombre,
+    //    apellido: req.body.apellido,
+    // });
 });
 
 router.post("/rutaPOSTconBody1", (req, res) => {
@@ -73,4 +78,8 @@ router.post("/rutaPOST5", (req, res) => {
     console.log("La complejidad de la ruta POST");
     res.send("No se puede ver el mensaje de la ruta post directamente desde google.");
 });
+
+
+
+
 module.exports = router;

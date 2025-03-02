@@ -7,6 +7,7 @@ app.set("port", process.env.PORT || 8080);
 
 //Middleware
 app.use(morgan("dev"));
+app.use(express.urlencoded({ extended: false }));
 
 //Routes
 app.use(require("./routes/index"));
