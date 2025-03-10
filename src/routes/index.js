@@ -47,6 +47,8 @@ router.post("/holaPOST", (req, res) => {
     //    nombre: req.body.nombre,
     //    apellido: req.body.apellido,
     // });
+
+    res.redirect("https://agustinmo01.github.io/PROYECTOINTERMODULAR/");
 });
 
 router.post("/rutaPOSTconBody1", (req, res) => {
