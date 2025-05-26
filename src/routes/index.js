@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const router = Router();
+const OpenAI =require("openai");
 
 //Rutas GET
 router.get("/rutaGEt", (req, res) => {
@@ -82,6 +83,28 @@ router.post("/rutaPOST5", (req, res) => {
 });
 
 
+router.post("/rutaPOST_AI", (req, res) => {
+    const openai = new OpenAI({
+        apiKey:
+        "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"
+    });
+
+    const completion = openai.chat.completions.create({
+        model: "gpt-4o-mini",
+        store: true,
+        messages: [
+            {
+                role: "developer",
+                content: "Eres un ordenador malote" +rq.body.pregunta,
+            },
+        ],
+    });
+
+    completion.then((result) => {
+        // console.log(result.choices[0].message);
+        res.send(result.choices[0]);
+    });
+});
 
 
 module.exports = router;

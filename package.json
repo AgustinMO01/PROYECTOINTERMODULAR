@@ -1,6 +1,7 @@
 {
   "name": "proyectointermodular",
   "version": "1.0.0",
+  "title": "Ejercicios de clase de DAM",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
